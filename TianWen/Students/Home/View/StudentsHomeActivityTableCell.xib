@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StudentsHomeActivityTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="206.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav／icon／title备份" translatesAutoresizingMaskIntoConstraints="NO" id="rh1-y5-AtU">
+                        <rect key="frame" x="15" y="16" width="4" height="19"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-0V-QI0">
+                        <rect key="frame" x="29" y="15" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NRi-Rn-NOi">
+                        <rect key="frame" x="15" y="51" width="305" height="135"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="135" id="lQ1-Tk-ocD"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1GM-Ns-Uac">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_activity_many" translatesAutoresizingMaskIntoConstraints="NO" id="kGW-Hi-CMC">
+                        <rect key="frame" x="295" y="22" width="5" height="7"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCI-yE-1H1">
+                        <rect key="frame" x="259" y="10.5" width="31" height="30"/>
+                        <state key="normal" title="更多">
+                            <color key="titleColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LVb-0V-QI0" firstAttribute="leading" secondItem="rh1-y5-AtU" secondAttribute="trailing" constant="10" id="9OT-fk-7fR"/>
+                    <constraint firstAttribute="trailing" secondItem="kGW-Hi-CMC" secondAttribute="trailing" constant="20" id="LHS-RN-fee"/>
+                    <constraint firstItem="NRi-Rn-NOi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LrW-AG-C8E"/>
+                    <constraint firstItem="kGW-Hi-CMC" firstAttribute="leading" secondItem="kCI-yE-1H1" secondAttribute="trailing" constant="5" id="Nki-iD-EPI"/>
+                    <constraint firstItem="LVb-0V-QI0" firstAttribute="centerY" secondItem="rh1-y5-AtU" secondAttribute="centerY" id="Omv-n6-5p6"/>
+                    <constraint firstItem="LVb-0V-QI0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YmB-9e-wD4"/>
+                    <constraint firstItem="NRi-Rn-NOi" firstAttribute="top" secondItem="LVb-0V-QI0" secondAttribute="bottom" constant="15" id="g3H-z7-Gf7"/>
+                    <constraint firstItem="kCI-yE-1H1" firstAttribute="centerY" secondItem="kGW-Hi-CMC" secondAttribute="centerY" id="kiV-pO-jtE"/>
+                    <constraint firstItem="kGW-Hi-CMC" firstAttribute="centerY" secondItem="LVb-0V-QI0" secondAttribute="centerY" id="psf-Rn-vHh"/>
+                    <constraint firstItem="rh1-y5-AtU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="v0O-aC-Fb1"/>
+                    <constraint firstAttribute="trailing" secondItem="NRi-Rn-NOi" secondAttribute="trailing" id="wlt-zE-WFv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="collectView" destination="NRi-Rn-NOi" id="BUd-ix-nHe"/>
+                <outlet property="moreBtn" destination="kCI-yE-1H1" id="2jy-jV-uhp"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.27286356821591"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_activity_many" width="5" height="7"/>
+        <image name="nav／icon／title备份" width="4" height="19"/>
+    </resources>
+</document>

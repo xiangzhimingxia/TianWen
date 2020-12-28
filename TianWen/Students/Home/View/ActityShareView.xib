@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eFl-AV-TSI" customClass="ActityShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOJ-rd-ut9">
+                    <rect key="frame" x="0.0" y="147" width="375" height="205"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBu-rN-xBa">
+                            <rect key="frame" x="64" y="25" width="60" height="60"/>
+                            <state key="normal" image="icon_wechat"/>
+                            <connections>
+                                <action selector="wechatAction:" destination="eFl-AV-TSI" eventType="touchUpInside" id="qbe-g3-Z4J"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goq-Ly-GYl">
+                            <rect key="frame" x="251" y="25" width="60" height="60"/>
+                            <state key="normal" image="icon_pengyouquan"/>
+                            <connections>
+                                <action selector="circleAction:" destination="eFl-AV-TSI" eventType="touchUpInside" id="9gO-3f-elL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-bf-xZD">
+                            <rect key="frame" x="77.5" y="100" width="33" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-cT-B7e">
+                            <rect key="frame" x="256.5" y="100" width="49" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8E-O7-JI1">
+                            <rect key="frame" x="0.0" y="139.5" width="375" height="5"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="2QF-zS-jr7"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOK-If-TFU">
+                            <rect key="frame" x="0.0" y="144.5" width="375" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="FUK-Rh-QBb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="eFl-AV-TSI" eventType="touchUpInside" id="STW-7k-nZO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yPm-bf-xZD" firstAttribute="centerX" secondItem="rBu-rN-xBa" secondAttribute="centerX" id="3JD-fI-Lm8"/>
+                        <constraint firstItem="W8E-O7-JI1" firstAttribute="leading" secondItem="kOJ-rd-ut9" secondAttribute="leading" id="7zv-oj-mDb"/>
+                        <constraint firstItem="yOK-If-TFU" firstAttribute="top" secondItem="W8E-O7-JI1" secondAttribute="bottom" id="9Gm-cy-cZK"/>
+                        <constraint firstAttribute="height" constant="205" id="DFm-Nv-utT"/>
+                        <constraint firstItem="gBe-cT-B7e" firstAttribute="centerX" secondItem="goq-Ly-GYl" secondAttribute="centerX" id="J24-lt-kEQ"/>
+                        <constraint firstItem="W8E-O7-JI1" firstAttribute="top" secondItem="yPm-bf-xZD" secondAttribute="bottom" constant="20" id="MNl-L5-UWV"/>
+                        <constraint firstAttribute="trailing" secondItem="goq-Ly-GYl" secondAttribute="trailing" constant="64" id="MrN-PQ-QpR"/>
+                        <constraint firstItem="rBu-rN-xBa" firstAttribute="leading" secondItem="kOJ-rd-ut9" secondAttribute="leading" constant="64" id="b4u-K1-3w7"/>
+                        <constraint firstAttribute="trailing" secondItem="yOK-If-TFU" secondAttribute="trailing" id="b5e-fv-cIS"/>
+                        <constraint firstItem="rBu-rN-xBa" firstAttribute="top" secondItem="kOJ-rd-ut9" secondAttribute="top" constant="25" id="b7X-me-BLx"/>
+                        <constraint firstItem="rBu-rN-xBa" firstAttribute="centerY" secondItem="goq-Ly-GYl" secondAttribute="centerY" id="bBF-CQ-unI"/>
+                        <constraint firstAttribute="trailing" secondItem="W8E-O7-JI1" secondAttribute="trailing" id="bvj-GR-znV"/>
+                        <constraint firstItem="yOK-If-TFU" firstAttribute="leading" secondItem="kOJ-rd-ut9" secondAttribute="leading" id="fVv-jB-p5U"/>
+                        <constraint firstItem="yPm-bf-xZD" firstAttribute="top" secondItem="rBu-rN-xBa" secondAttribute="bottom" constant="15" id="koD-vb-JKA"/>
+                        <constraint firstItem="gBe-cT-B7e" firstAttribute="top" secondItem="goq-Ly-GYl" secondAttribute="bottom" constant="15" id="rLn-55-7UQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kOJ-rd-ut9" firstAttribute="trailing" secondItem="O72-PC-K0s" secondAttribute="trailing" id="32k-hy-NET"/>
+                <constraint firstItem="kOJ-rd-ut9" firstAttribute="leading" secondItem="O72-PC-K0s" secondAttribute="leading" id="GBJ-E2-R0D"/>
+                <constraint firstItem="kOJ-rd-ut9" firstAttribute="bottom" secondItem="eFl-AV-TSI" secondAttribute="bottom" id="IVg-iO-Xuw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="O72-PC-K0s"/>
+            <connections>
+                <outlet property="cancelBtn" destination="yOK-If-TFU" id="5NG-Oy-n4a"/>
+                <outlet property="circleFriendBtn" destination="goq-Ly-GYl" id="SWg-c7-tea"/>
+                <outlet property="toBottomHeightConstant" destination="DFm-Nv-utT" id="VLb-vP-e6t"/>
+                <outlet property="wechatBtn" destination="rBu-rN-xBa" id="gqO-9b-QpW"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="33"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_pengyouquan" width="60" height="60"/>
+        <image name="icon_wechat" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UlE-cZ-yu4" customClass="ApplyRefuseView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_  failure audit" translatesAutoresizingMaskIntoConstraints="NO" id="8Qc-cP-gdA">
+                    <rect key="frame" x="78.5" y="100" width="218" height="156"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-FE-b9h">
+                    <rect key="frame" x="151" y="335" width="73.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-Ib-tQv">
+                    <rect key="frame" x="35" y="444.5" width="305" height="50"/>
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.79215686269999996" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9F7-b3-MY1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="再次申请"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-79-vyj">
+                    <rect key="frame" x="8" y="371.5" width="359" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Qc-cP-gdA" firstAttribute="top" secondItem="rIp-St-qE1" secondAttribute="top" constant="80" id="83R-mX-zM6"/>
+                <constraint firstItem="b8O-79-vyj" firstAttribute="top" secondItem="wpV-FE-b9h" secondAttribute="bottom" constant="15" id="E21-nK-lqR"/>
+                <constraint firstItem="vTn-Ib-tQv" firstAttribute="top" secondItem="wpV-FE-b9h" secondAttribute="bottom" constant="88" id="OvO-Va-POE"/>
+                <constraint firstItem="wpV-FE-b9h" firstAttribute="centerX" secondItem="rIp-St-qE1" secondAttribute="centerX" id="Qe2-Rr-T4L"/>
+                <constraint firstItem="rIp-St-qE1" firstAttribute="trailing" secondItem="vTn-Ib-tQv" secondAttribute="trailing" constant="35" id="TTB-bm-iCa"/>
+                <constraint firstItem="wpV-FE-b9h" firstAttribute="top" secondItem="8Qc-cP-gdA" secondAttribute="bottom" constant="79" id="V9G-JX-JXW"/>
+                <constraint firstItem="b8O-79-vyj" firstAttribute="leading" secondItem="rIp-St-qE1" secondAttribute="leading" constant="8" id="VFH-g6-UNr"/>
+                <constraint firstItem="8Qc-cP-gdA" firstAttribute="centerX" secondItem="rIp-St-qE1" secondAttribute="centerX" id="gGs-b0-z5j"/>
+                <constraint firstItem="vTn-Ib-tQv" firstAttribute="leading" secondItem="rIp-St-qE1" secondAttribute="leading" constant="35" id="i5d-a9-vp0"/>
+                <constraint firstItem="rIp-St-qE1" firstAttribute="trailing" secondItem="b8O-79-vyj" secondAttribute="trailing" constant="8" id="rBQ-DQ-wCT"/>
+                <constraint firstItem="b8O-79-vyj" firstAttribute="centerX" secondItem="rIp-St-qE1" secondAttribute="centerX" id="xr7-75-SfU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rIp-St-qE1"/>
+            <connections>
+                <outlet property="applyBtn" destination="vTn-Ib-tQv" id="rXM-8B-eT8"/>
+                <outlet property="stateLb" destination="wpV-FE-b9h" id="jCa-jS-04S"/>
+                <outlet property="steteImg" destination="8Qc-cP-gdA" id="4k8-Nl-qnA"/>
+            </connections>
+            <point key="canvasLocation" x="144.80000000000001" y="125.4872563718141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_  failure audit" width="218" height="156"/>
+    </resources>
+</document>

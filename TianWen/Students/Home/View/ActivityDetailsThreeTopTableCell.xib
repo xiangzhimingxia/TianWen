@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActivityDetailsThreeTopTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-37-Qye">
+                        <rect key="frame" x="15" y="0.0" width="290" height="50.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T3-5Y-4IU">
+                                <rect key="frame" x="15" y="49.5" width="260" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qxh-RD-snY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的投票" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXC-XG-Siw">
+                                <rect key="frame" x="15" y="16.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6T3-5Y-4IU" secondAttribute="trailing" constant="15" id="BVC-od-Smv"/>
+                            <constraint firstAttribute="bottom" secondItem="6T3-5Y-4IU" secondAttribute="bottom" id="KBz-3s-HcZ"/>
+                            <constraint firstItem="TXC-XG-Siw" firstAttribute="centerY" secondItem="5fI-37-Qye" secondAttribute="centerY" id="KlI-Zg-9Of"/>
+                            <constraint firstItem="6T3-5Y-4IU" firstAttribute="leading" secondItem="5fI-37-Qye" secondAttribute="leading" constant="15" id="gBt-Qx-inS"/>
+                            <constraint firstItem="TXC-XG-Siw" firstAttribute="leading" secondItem="5fI-37-Qye" secondAttribute="leading" constant="15" id="prk-gK-bis"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5fI-37-Qye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VLw-44-bo3"/>
+                    <constraint firstItem="5fI-37-Qye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="del-DW-lYn"/>
+                    <constraint firstAttribute="trailing" secondItem="5fI-37-Qye" secondAttribute="trailing" constant="15" id="k37-CK-fUZ"/>
+                    <constraint firstAttribute="bottom" secondItem="5fI-37-Qye" secondAttribute="bottom" id="sCL-gr-IM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="40" y="46.326836581709152"/>
+        </tableViewCell>
+    </objects>
+</document>

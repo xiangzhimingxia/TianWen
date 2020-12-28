@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  TianWen
+//
+//  Created by 朱伟 on 2020/11/12.
+//  Copyright © 2020 ZW. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//解决NSLog打印不全的BUG
+#ifdef DEBUG //调试
+#define ZWLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+#else // 发布
+#define ZWLog(format, ...)
+#endif
+
+
+#ifdef __OBJC__  //判断OC文件才导入下面头文件
+
+#import <Masonry.h>
+#import <MJExtension.h>
+#import "UIColor+RGB.h"
+#import "Define.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+#import <MJRefresh/MJRefresh.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImage+image.h"
+#import "UIView+gesture.h"
+#import "HttpManager.h"
+#import "JLKFUtil.h"
+#import "JRToast.h"
+#import "UIView+Extension.h"
+#import "UIButton+EnlargeEdge.h"
+#import "NSString+ExchangeData.h"
+
+#import <YYKit/YYKit.h>
+//#import <YYKit/UIView+YYAdd.h>
+//#import <YYKit/UIColor+YYAdd.h>
+//#import <YYKit/UIScrollView+YYAdd.h>
+//#import <NSObject+YYModel.h>
+//#import "UIImage+YYAdd.h"
+
+#import "JLKFBaseViewController.h"
+#import "JLKFBaseNavigationController.h"
+#import "AppUser.h"
+
+#endif
+
+#endif /* PrefixHeader_pch */

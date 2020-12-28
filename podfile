@@ -1,0 +1,19 @@
+platform :ios, '8.0'
+
+target 'TianWen' do
+
+pod 'Masonry'
+pod 'YYKit'
+pod ‘IQKeyboardManager’
+pod 'AFNetworking', '~> 3.0'
+pod 'SDWebImage', '~> 4.0'
+pod 'MJExtension'
+pod 'MBProgressHUD'
+pod 'MJRefresh', '~> 3.1.15.3'
+pod 'SVProgressHUD'
+pod 'FreeStreamer'
+pod 'TXIMSDK_iOS'
+pod 'TXLiteAVSDK_TRTC'
+pod 'WechatOpenSDK'
+
+end

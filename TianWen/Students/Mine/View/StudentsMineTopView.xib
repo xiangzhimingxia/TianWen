@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6eu-nn-AzF" customClass="StudentsMineTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCl-15-76d">
+                    <rect key="frame" x="15" y="0.0" width="345" height="165"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VST-Mb-96k">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="165"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="holdHeader" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-k2-l3k">
+                            <rect key="frame" x="15" y="42.5" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="0mb-v3-MkY"/>
+                                <constraint firstAttribute="width" constant="80" id="7zc-mE-zZB"/>
+                            </constraints>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWq-EE-oCV">
+                            <rect key="frame" x="71" y="98.5" width="24" height="24"/>
+                            <state key="normal" image="icon_change"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2t-82-z16">
+                            <rect key="frame" x="110" y="35" width="49" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae9-QW-L7e">
+                            <rect key="frame" x="267" y="38.5" width="19" height="22"/>
+                            <state key="normal" image="mine_icon_edit"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-jd-Y1k">
+                            <rect key="frame" x="311" y="38.5" width="19" height="22"/>
+                            <state key="normal" image="mine_icon_loguot"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-rg-yRi">
+                            <rect key="frame" x="110" y="69" width="4" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlv-LD-Xe1">
+                            <rect key="frame" x="110" y="103" width="93" height="24"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rank_bg" translatesAutoresizingMaskIntoConstraints="NO" id="uN0-qa-b2W">
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="24"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_rank" translatesAutoresizingMaskIntoConstraints="NO" id="LmS-RD-DCg">
+                                    <rect key="frame" x="10" y="4.5" width="17" height="15"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-hR-rTc">
+                                    <rect key="frame" x="32" y="4" width="53.5" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.51764705882352935" green="0.40392156862745099" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SMe-hR-rTc" firstAttribute="centerY" secondItem="uN0-qa-b2W" secondAttribute="centerY" id="1EE-uj-Kt3"/>
+                                <constraint firstAttribute="height" constant="24" id="37Q-gG-SJL"/>
+                                <constraint firstAttribute="bottom" secondItem="uN0-qa-b2W" secondAttribute="bottom" id="7vr-pZ-Iaz"/>
+                                <constraint firstAttribute="trailing" secondItem="uN0-qa-b2W" secondAttribute="trailing" id="9Km-Pi-0Iz"/>
+                                <constraint firstItem="uN0-qa-b2W" firstAttribute="top" secondItem="wlv-LD-Xe1" secondAttribute="top" id="Amg-OC-Khw"/>
+                                <constraint firstItem="SMe-hR-rTc" firstAttribute="leading" secondItem="LmS-RD-DCg" secondAttribute="trailing" constant="5" id="IGR-yn-mQG"/>
+                                <constraint firstItem="uN0-qa-b2W" firstAttribute="leading" secondItem="wlv-LD-Xe1" secondAttribute="leading" id="OPR-o6-MVB"/>
+                                <constraint firstAttribute="width" constant="93" id="Q1z-sI-Fcj"/>
+                                <constraint firstItem="LmS-RD-DCg" firstAttribute="leading" secondItem="wlv-LD-Xe1" secondAttribute="leading" constant="10" id="lcI-kr-A0T"/>
+                                <constraint firstItem="LmS-RD-DCg" firstAttribute="centerY" secondItem="uN0-qa-b2W" secondAttribute="centerY" id="vct-uD-pnb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="kWq-EE-oCV" firstAttribute="trailing" secondItem="7S0-k2-l3k" secondAttribute="trailing" id="4fh-ap-sg6"/>
+                        <constraint firstItem="cvb-jd-Y1k" firstAttribute="leading" secondItem="Ae9-QW-L7e" secondAttribute="trailing" constant="25" id="6U0-hK-kDE"/>
+                        <constraint firstAttribute="trailing" secondItem="VST-Mb-96k" secondAttribute="trailing" id="9j5-3h-sbq"/>
+                        <constraint firstItem="cvb-jd-Y1k" firstAttribute="centerY" secondItem="N2t-82-z16" secondAttribute="centerY" id="Cly-Et-I6Z"/>
+                        <constraint firstItem="7S0-k2-l3k" firstAttribute="leading" secondItem="xCl-15-76d" secondAttribute="leading" constant="15" id="EMk-tv-xoC"/>
+                        <constraint firstItem="7S0-k2-l3k" firstAttribute="centerY" secondItem="VST-Mb-96k" secondAttribute="centerY" id="GIg-jX-NrO"/>
+                        <constraint firstItem="N2t-82-z16" firstAttribute="leading" secondItem="7S0-k2-l3k" secondAttribute="trailing" constant="15" id="HCJ-f9-ksn"/>
+                        <constraint firstItem="iGS-rg-yRi" firstAttribute="top" secondItem="N2t-82-z16" secondAttribute="bottom" constant="5" id="Hvl-Fp-m0s"/>
+                        <constraint firstAttribute="bottom" secondItem="VST-Mb-96k" secondAttribute="bottom" id="KhN-K6-Jid"/>
+                        <constraint firstAttribute="trailing" secondItem="cvb-jd-Y1k" secondAttribute="trailing" constant="15" id="NNl-Ip-xGh"/>
+                        <constraint firstItem="kWq-EE-oCV" firstAttribute="bottom" secondItem="7S0-k2-l3k" secondAttribute="bottom" id="O2x-uc-0Lb"/>
+                        <constraint firstItem="VST-Mb-96k" firstAttribute="top" secondItem="xCl-15-76d" secondAttribute="top" id="R6d-es-K5Y"/>
+                        <constraint firstItem="VST-Mb-96k" firstAttribute="leading" secondItem="xCl-15-76d" secondAttribute="leading" id="ViM-wP-Kvg"/>
+                        <constraint firstItem="wlv-LD-Xe1" firstAttribute="top" secondItem="iGS-rg-yRi" secondAttribute="bottom" constant="16" id="fVz-sd-ckU"/>
+                        <constraint firstItem="iGS-rg-yRi" firstAttribute="leading" secondItem="N2t-82-z16" secondAttribute="leading" id="n2Z-Gw-hX3"/>
+                        <constraint firstItem="Ae9-QW-L7e" firstAttribute="centerY" secondItem="cvb-jd-Y1k" secondAttribute="centerY" id="ofm-kj-doM"/>
+                        <constraint firstItem="N2t-82-z16" firstAttribute="top" secondItem="xCl-15-76d" secondAttribute="top" constant="35" id="qGz-cL-s7p"/>
+                        <constraint firstItem="wlv-LD-Xe1" firstAttribute="leading" secondItem="iGS-rg-yRi" secondAttribute="leading" id="wbz-dK-PjB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xCl-15-76d" firstAttribute="top" secondItem="Vj2-Cx-dop" secondAttribute="top" id="FQA-3E-OjO"/>
+                <constraint firstItem="xCl-15-76d" firstAttribute="bottom" secondItem="Vj2-Cx-dop" secondAttribute="bottom" id="L8c-mI-45l"/>
+                <constraint firstItem="Vj2-Cx-dop" firstAttribute="trailing" secondItem="xCl-15-76d" secondAttribute="trailing" constant="15" id="TvN-Ye-7uq"/>
+                <constraint firstItem="xCl-15-76d" firstAttribute="leading" secondItem="Vj2-Cx-dop" secondAttribute="leading" constant="15" id="p7d-Ii-kC0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Vj2-Cx-dop"/>
+            <connections>
+                <outlet property="VIPImg" destination="LmS-RD-DCg" id="Q1y-Gy-ogV"/>
+                <outlet property="VIPLb" destination="SMe-hR-rTc" id="BhB-xe-laP"/>
+                <outlet property="VIPView" destination="wlv-LD-Xe1" id="KZd-mG-v2s"/>
+                <outlet property="describeLb" destination="iGS-rg-yRi" id="BGa-yQ-QoX"/>
+                <outlet property="editBtn" destination="Ae9-QW-L7e" id="wC6-Y9-WJv"/>
+                <outlet property="exitBtn" destination="cvb-jd-Y1k" id="rTJ-sH-O3c"/>
+                <outlet property="headImg" destination="7S0-k2-l3k" id="s0H-Mu-NMu"/>
+                <outlet property="nameLb" destination="N2t-82-z16" id="UIe-ZY-dIa"/>
+                <outlet property="switchBtn" destination="kWq-EE-oCV" id="8Go-NH-gqN"/>
+            </connections>
+            <point key="canvasLocation" x="493.60000000000002" y="-224.4377811094453"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="holdHeader" width="41" height="42"/>
+        <image name="icon_change" width="24" height="24"/>
+        <image name="icon_rank" width="17" height="15"/>
+        <image name="mine_bg" width="345" height="165"/>
+        <image name="mine_icon_edit" width="19" height="18"/>
+        <image name="mine_icon_loguot" width="19" height="18"/>
+        <image name="rank_bg" width="93" height="24"/>
+    </resources>
+</document>

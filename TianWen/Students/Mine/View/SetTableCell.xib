@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SetTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f37-yo-Ths">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XT9-xv-HuS">
+                                <rect key="frame" x="15" y="54.5" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="QKh-jX-rdH"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon111" translatesAutoresizingMaskIntoConstraints="NO" id="PTb-m2-fUG">
+                                <rect key="frame" x="15" y="19" width="18" height="18"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计费规则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-PT-C1O">
+                                <rect key="frame" x="48" y="19" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_icon_arrow_more" translatesAutoresizingMaskIntoConstraints="NO" id="3nN-kQ-DBH">
+                                <rect key="frame" x="283" y="17" width="22" height="22"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0m6-PT-C1O" firstAttribute="centerY" secondItem="f37-yo-Ths" secondAttribute="centerY" id="02n-3d-eet"/>
+                            <constraint firstAttribute="bottom" secondItem="XT9-xv-HuS" secondAttribute="bottom" id="6bE-lO-xS1"/>
+                            <constraint firstAttribute="trailing" secondItem="3nN-kQ-DBH" secondAttribute="trailing" constant="15" id="8Hf-ji-nAh"/>
+                            <constraint firstItem="0m6-PT-C1O" firstAttribute="leading" secondItem="PTb-m2-fUG" secondAttribute="trailing" constant="15" id="C7G-fh-LzP"/>
+                            <constraint firstItem="3nN-kQ-DBH" firstAttribute="centerY" secondItem="f37-yo-Ths" secondAttribute="centerY" id="Vis-ov-cBX"/>
+                            <constraint firstItem="PTb-m2-fUG" firstAttribute="leading" secondItem="f37-yo-Ths" secondAttribute="leading" constant="15" id="aY1-Qs-8ns"/>
+                            <constraint firstItem="PTb-m2-fUG" firstAttribute="centerY" secondItem="f37-yo-Ths" secondAttribute="centerY" id="cJG-iU-ge9"/>
+                            <constraint firstAttribute="trailing" secondItem="XT9-xv-HuS" secondAttribute="trailing" constant="15" id="cov-NX-eza"/>
+                            <constraint firstItem="XT9-xv-HuS" firstAttribute="leading" secondItem="f37-yo-Ths" secondAttribute="leading" constant="15" id="fXa-6p-fop"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f37-yo-Ths" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J9m-FI-oVt"/>
+                    <constraint firstAttribute="trailing" secondItem="f37-yo-Ths" secondAttribute="trailing" id="URY-5i-WMO"/>
+                    <constraint firstAttribute="bottom" secondItem="f37-yo-Ths" secondAttribute="bottom" id="a1C-5k-2tZ"/>
+                    <constraint firstItem="f37-yo-Ths" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bth-9Z-mkI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bottomLine" destination="XT9-xv-HuS" id="zMn-xV-Htl"/>
+                <outlet property="img" destination="PTb-m2-fUG" id="JtN-qu-dXy"/>
+                <outlet property="textLb" destination="0m6-PT-C1O" id="rbE-Ed-YdB"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="content_icon_arrow_more" width="22" height="22"/>
+        <image name="icon111" width="18" height="18"/>
+    </resources>
+</document>
