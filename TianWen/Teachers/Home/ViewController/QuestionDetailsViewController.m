@@ -168,11 +168,6 @@ kUI(NSMutableArray, recordMutArr);
     // 发起语音通话
     [[TRTCCalling shareInstance] call:self.detailsModel.userId type:CallType_Audio];
     
-    NSDictionary *msgDic = @{@"classId":@([self.detailsModel.roomId intValue]),@"orderId":self.detailsModel.orderId,@"type":@(1002)};
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:msgDic options:0 error:nil];
-    
-    [self sendIMMessgeWithJsonData:jsonData];
-    
 }
 
 -(void)addSubViewTapAction{
@@ -237,6 +232,11 @@ kUI(NSMutableArray, recordMutArr);
 //    self.receiveView.myVideoView.hidden = NO;
 //    //打开自己的摄像头
 //    [[TRTCCalling shareInstance] openCamera:true view:self.receiveView.myVideoView];
+    
+    NSDictionary *msgDic = @{@"classId":@([self.detailsModel.roomId intValue]),@"orderId":self.detailsModel.orderId,@"type":@(1002)};
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:msgDic options:0 error:nil];
+    
+    [self sendIMMessgeWithJsonData:jsonData];
 }
 
 -(void)onNoResp:(NSString *)uid{

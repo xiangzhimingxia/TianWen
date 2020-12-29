@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *circleFriendBtn;
 @property (weak, nonatomic) IBOutlet UIButton *cancelBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *toBottomHeightConstant;
+@property (weak, nonatomic) IBOutlet UILabel *wechatLb;
+@property (weak, nonatomic) IBOutlet UILabel *circleLb;
 
 @end
 

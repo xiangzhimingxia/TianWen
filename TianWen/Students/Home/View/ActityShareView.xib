@@ -97,8 +97,10 @@
             <connections>
                 <outlet property="cancelBtn" destination="yOK-If-TFU" id="5NG-Oy-n4a"/>
                 <outlet property="circleFriendBtn" destination="goq-Ly-GYl" id="SWg-c7-tea"/>
+                <outlet property="circleLb" destination="gBe-cT-B7e" id="hpM-bC-xVa"/>
                 <outlet property="toBottomHeightConstant" destination="DFm-Nv-utT" id="VLb-vP-e6t"/>
                 <outlet property="wechatBtn" destination="rBu-rN-xBa" id="gqO-9b-QpW"/>
+                <outlet property="wechatLb" destination="yPm-bf-xZD" id="fq5-hG-dYp"/>
             </connections>
             <point key="canvasLocation" x="209" y="33"/>
         </view>

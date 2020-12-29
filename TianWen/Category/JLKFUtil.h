@@ -188,6 +188,15 @@
 + (NSString *)getWeekTime;
 
 /**
+ 是否为null
+
+ @param BOOL YES为空
+ @return <#return value description#>
+ */
+#pragma mark -
++(BOOL)isEmpty:(id)object;
+
+/**
  获取UserDefaults数据
 
  @param keyStr UserDefaults Key值

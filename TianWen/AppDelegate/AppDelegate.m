@@ -10,6 +10,7 @@
 #import "JLKFLuanchViewController.h"
 #import <IQKeyboardManager.h>
 #import "LoginViewController.h"
+#import "WXApi.h"
 
 //腾讯云IM音视频
 #import "TXLiteAVSDK_TRTC/TRTCCloud.h"
@@ -22,7 +23,7 @@
 #import "ReceiveLiveView.h"
 #import "OtherModel.h"
 
-@interface AppDelegate ()<TRTCCallingDelegate,V2TIMSimpleMsgListener,TEduBoardDelegate>
+@interface AppDelegate ()<TRTCCallingDelegate,V2TIMSimpleMsgListener,TEduBoardDelegate,WXApiDelegate>
 
 @property (nonatomic, strong) ReceiveLiveView *receiveView;
 
@@ -58,6 +59,7 @@ kUI(NSDate, firstDate);
     [self initIponeXAutolayer];
     [self setupKeyboard];
     [self addNotificationAction];
+    [self setPaymentAction];
     [self initRootViewController];
     
     return YES;
@@ -155,6 +157,12 @@ kUI(NSDate, firstDate);
     manager.shouldToolbarUsesTextFieldTintColor =NO; // 控制键盘上的工具条文字颜色是否用户自定义
     manager.enableAutoToolbar =NO; // 控制是否显示键盘上的工具条
     manager.toolbarManageBehaviour =IQAutoToolbarByTag;
+}
+
+-(void)setPaymentAction{
+    //向微信注册
+    [WXApi registerApp:@"wxa495a7fa18d87be8"
+         universalLink:@"https://tellwinedu.com/"];
 }
 
 // 将NSlog打印信息保存到Document目录下的文件中（第三方已生成的Log直接Download Container后显示包内容查找）
@@ -727,6 +735,43 @@ kUI(NSDate, firstDate);
     }
 }
 
+/// 收到 C2C 文本消息
+- (void)onRecvC2CTextMessage:(NSString *)msgID  sender:(V2TIMUserInfo *)info text:(NSString *)text{
+    
+    if (text == nil) {
+        return;
+    }
+    
+    NSData *jsonData = [text dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *msgDic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    
+    OtherModel *model = [OtherModel mj_objectWithKeyValues:msgDic];
+    
+    if (model.orderId.length > 0) {
+        
+        self.roomId = [msgDic[@"classId"] intValue];
+        self.orderId = msgDic[@"orderId"];
+        
+        int type = [msgDic[@"type"] intValue];
+        
+        if (type == 1001 && User.isAnswer) {
+            [self addGroupIMAction];
+        }else if (type == 1003){
+            [self removeReceiveView];
+            if (User.isAnswer) {
+                [self answerFinishNet];
+            }else{
+                [self popUpQuestionView];
+            }
+        }
+    }
+}
+
+
+
 #pragma mark - 发送自定义单聊消息
 -(void)sendIMMessgeWithJsonData:(NSData *)jsonData{
     
@@ -779,6 +824,66 @@ kUI(NSDate, firstDate);
 //            [MBProgressHUD showMessage:obj[msgKey]];
         }
     }];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+-(void) onReq:(BaseReq*)reqonReq{
+    
+}
+
+-(void) onResp:(BaseResp*)resp{
+    
+    if([resp isKindOfClass:[PayResp class]]){//支付结果回调
+        NSString *strMsg = [NSString stringWithFormat:@"errcode:%d", resp.errCode];
+        NSString *strTitle;
+        //支付返回结果，实际支付结果需要去微信服务器端查询
+        strTitle = [NSString stringWithFormat:@"支付结果"];
+        
+        switch (resp.errCode) {
+            case WXSuccess:{
+                //支付返回结果，实际支付结果需要去自己的服务器端查询
+                strMsg = @"支付结果：成功！";
+                if (_payDelegate && [_payDelegate respondsToSelector:@selector(WechatPaySuccess)]) {
+                    [_payDelegate WechatPaySuccess];
+                }
+                
+                break;
+            }
+                
+            default:{
+                strMsg = [NSString stringWithFormat:@"支付结果：失败！retcode = %d, retstr = %@", resp.errCode,resp.errStr];//给用户看错误码 自己看
+                NSLog(@"错误，retcode = %d, retstr = %@", resp.errCode,resp.errStr);
+                strMsg = [NSString stringWithFormat:@"支付结果：失败！错误码：%d, 错误原因：%@", resp.errCode,resp.errStr];//不给用户看错误码
+                
+                if (resp.errCode == -2 &&  [JLKFUtil isEmpty:resp.errStr] ) {
+                    strTitle = @"提示"; strMsg = @"您已取消支付";
+                }
+                break;
+            }
+                
+        }
+        
+//        if ([_wxDelegate respondsToSelector:@selector(WeChatPaySuccessByCode:)]) {
+//            PayResp *resp2 = (PayResp *)resp;
+//            [_wxDelegate WeChatPaySuccessByCode:resp2.errCode];
+//        }
+        if (resp.errCode == WXSuccess) {
+            //注释掉 用自自定义的成功提示
+            return;
+        }
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:strTitle message:strMsg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+        
+    }
+    
 }
 
 #pragma mark -- 系统方法

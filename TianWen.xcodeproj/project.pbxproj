@@ -108,6 +108,7 @@
 		F27EAE422593895200FF8E47 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27EAE412593895200FF8E47 /* WebViewViewController.m */; };
 		F27EAE4825968D6D00FF8E47 /* TEduBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27EAE4725968D6D00FF8E47 /* TEduBoard.framework */; };
 		F27EAEB32597E65C00FF8E47 /* ActivitySignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27EAEB22597E65C00FF8E47 /* ActivitySignDetailViewController.m */; };
+		F28163FA259B032F0015B370 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F28163F9259B032F0015B370 /* WXApiManager.m */; };
 		F285360F258EBF1B00684D27 /* GenerateTestUserSig.m in Sources */ = {isa = PBXBuildFile; fileRef = F285360D258EBF1B00684D27 /* GenerateTestUserSig.m */; };
 		F2853615258EC4F400684D27 /* ReceiveLiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2853614258EC4F400684D27 /* ReceiveLiveView.xib */; };
 		F29BB2E325902D73004C1C4E /* OrderDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BB2E225902D73004C1C4E /* OrderDetailsModel.m */; };
@@ -177,6 +178,7 @@
 		F2B71263256F59B600859423 /* StudentsFocusTeacherTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B71261256F59B600859423 /* StudentsFocusTeacherTableCell.xib */; };
 		F2B7AC4625884507002DDFC1 /* TeacherTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B7AC4525884507002DDFC1 /* TeacherTeamModel.m */; };
 		F2B7AC492588454B002DDFC1 /* ActityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B7AC482588454B002DDFC1 /* ActityModel.m */; };
+		F2BF61E9259B243400E445FC /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF61E8259B243400E445FC /* PayModel.m */; };
 		F2C397E0258461FF00A4442F /* CountryPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C397DF258461FF00A4442F /* CountryPickerView.m */; };
 		F2C397EA2584706F00A4442F /* CZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C397E22584706F00A4442F /* CZHAddressPickerView.m */; };
 		F2C397EB2584706F00A4442F /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C397E72584706F00A4442F /* city.plist */; };
@@ -393,6 +395,8 @@
 		F27EAE4725968D6D00FF8E47 /* TEduBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TEduBoard.framework; sourceTree = "<group>"; };
 		F27EAEB12597E65B00FF8E47 /* ActivitySignDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitySignDetailViewController.h; sourceTree = "<group>"; };
 		F27EAEB22597E65C00FF8E47 /* ActivitySignDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitySignDetailViewController.m; sourceTree = "<group>"; };
+		F28163F8259B032F0015B370 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		F28163F9259B032F0015B370 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		F285360D258EBF1B00684D27 /* GenerateTestUserSig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTestUserSig.m; sourceTree = "<group>"; };
 		F285360E258EBF1B00684D27 /* GenerateTestUserSig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTestUserSig.h; sourceTree = "<group>"; };
 		F2853614258EC4F400684D27 /* ReceiveLiveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiveLiveView.xib; sourceTree = "<group>"; };
@@ -519,6 +523,8 @@
 		F2B7AC4525884507002DDFC1 /* TeacherTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherTeamModel.m; sourceTree = "<group>"; };
 		F2B7AC472588454B002DDFC1 /* ActityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActityModel.h; sourceTree = "<group>"; };
 		F2B7AC482588454B002DDFC1 /* ActityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActityModel.m; sourceTree = "<group>"; };
+		F2BF61E7259B243400E445FC /* PayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayModel.h; sourceTree = "<group>"; };
+		F2BF61E8259B243400E445FC /* PayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayModel.m; sourceTree = "<group>"; };
 		F2C397DE258461FE00A4442F /* CountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerView.h; sourceTree = "<group>"; };
 		F2C397DF258461FF00A4442F /* CountryPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerView.m; sourceTree = "<group>"; };
 		F2C397E22584706F00A4442F /* CZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHAddressPickerView.m; sourceTree = "<group>"; };
@@ -1251,6 +1257,10 @@
 				F2C397E12584706F00A4442F /* AddressPickerView */,
 				F2B41193255DBC6C00E6CF80 /* AppUser.h */,
 				F2B41194255DBC6C00E6CF80 /* AppUser.m */,
+				F28163F8259B032F0015B370 /* WXApiManager.h */,
+				F28163F9259B032F0015B370 /* WXApiManager.m */,
+				F2BF61E7259B243400E445FC /* PayModel.h */,
+				F2BF61E8259B243400E445FC /* PayModel.m */,
 				F2C397DE258461FE00A4442F /* CountryPickerView.h */,
 				F2C397DF258461FF00A4442F /* CountryPickerView.m */,
 				F2C397FF25847A4700A4442F /* FootChooseView.h */,
@@ -1696,6 +1706,7 @@
 				F2B41195255DBC6C00E6CF80 /* AppUser.m in Sources */,
 				F2158BAE258F55BA00860768 /* OrderListModel.m in Sources */,
 				F20E92A22579114500C82551 /* OrderOneTableCell.m in Sources */,
+				F28163FA259B032F0015B370 /* WXApiManager.m in Sources */,
 				F23AB8AA2598544E009C4257 /* TRTCCalling+Signal.m in Sources */,
 				F2B411982561314D00E6CF80 /* UIColor+RGB.m in Sources */,
 				F262549325932F34005413D5 /* AfterClassModel.m in Sources */,
@@ -1732,6 +1743,7 @@
 				F228E75E25908571006C9149 /* TeacherOrderDetailsViewController.m in Sources */,
 				F20E929E25790F7900C82551 /* QuestionDetailsViewController.m in Sources */,
 				F220200325775DB200DE4898 /* ActivityDetailsThreeTopTableCell.m in Sources */,
+				F2BF61E9259B243400E445FC /* PayModel.m in Sources */,
 				F2B4116A255D517400E6CF80 /* UIButton+EnlargeEdge.m in Sources */,
 				F22EDB89256A1228004410BB /* IntegralTableViewCell.m in Sources */,
 				F2B4114B255D43BA00E6CF80 /* RootViewController.m in Sources */,

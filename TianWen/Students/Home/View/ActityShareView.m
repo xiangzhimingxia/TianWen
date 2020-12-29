@@ -7,12 +7,20 @@
 //
 
 #import "ActityShareView.h"
+#import "WXApi.h"
 
 @implementation ActityShareView
 
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.toBottomHeightConstant.constant = 205 + SafeAreaBottomHeight;
+    
+    if (![WXApi isWXAppInstalled]) {
+        self.wechatLb.hidden = YES;
+        self.wechatBtn.hidden = YES;
+        self.circleLb.hidden = YES;
+        self.circleFriendBtn.hidden = YES;
+    }
 }
 
 - (IBAction)wechatAction:(id)sender {

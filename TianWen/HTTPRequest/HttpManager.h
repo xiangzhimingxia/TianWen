@@ -82,6 +82,8 @@
 
 #define feedback_Mine [NSString stringWithFormat:@"%@/heaven-api/api/my/feedback",HOST]
 
+#define recharge_Mine [NSString stringWithFormat:@"%@/heaven-api/api/my/recharge",HOST]
+
 #pragma mark -- Teacher
 #pragma mark - Home
 #define answerList_Home [NSString stringWithFormat:@"%@/heaven-api/api/order/answerList",HOST]

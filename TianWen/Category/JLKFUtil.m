@@ -691,6 +691,47 @@
 
 }
 
++ (BOOL)isEmpty:(id)object
+{
+    BOOL isEmpty = YES;
+    if(object && object!=nil && object != [NSNull null])
+    {
+        if([object isKindOfClass:[NSString class]])
+        {
+            if(![@"" isEqualToString:[object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]])
+            {
+                isEmpty = NO;
+            }
+            
+            
+            //ADD BY SUSURE
+            if ( (NSString *)object == nil
+                || [(NSString *)object isKindOfClass:[NSNull class]]
+                || ((NSString *)object).length == 0) {
+                isEmpty = YES;
+            }
+            
+        }
+        else if([object isKindOfClass:[NSArray class]])
+        {
+            if([object count]>0)
+            {
+                isEmpty = NO;
+            }
+        }
+        else if([object isKindOfClass:[NSDictionary class]])
+        {
+            if([[object allKeys] count]>0)
+            {
+                isEmpty = NO;
+            }
+        }
+        else isEmpty = NO;
+    }
+    
+    return isEmpty;
+}
+
 /**
  获取UserDefaults数据
 
