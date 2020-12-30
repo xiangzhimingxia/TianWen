@@ -12,7 +12,6 @@ pod 'MBProgressHUD'
 pod 'MJRefresh', '~> 3.1.15.3'
 pod 'SVProgressHUD'
 pod 'FreeStreamer'
-pod 'TXIMSDK_iOS'
 pod 'TXLiteAVSDK_TRTC'
 pod 'WechatOpenSDK'
 
