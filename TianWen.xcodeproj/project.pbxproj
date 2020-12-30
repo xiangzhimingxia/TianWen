@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC0C01E259B304C008324BD /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C01B259B304C008324BD /* WXApiManager.m */; };
+		2FC0C01F259B304C008324BD /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C01C259B304C008324BD /* PayModel.m */; };
 		DCBD7937CD2F1B1AA8BA916F /* libPods-TianWen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29686BBCA76AB509A80A098 /* libPods-TianWen.a */; };
 		F20E929E25790F7900C82551 /* QuestionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E929D25790F7900C82551 /* QuestionDetailsViewController.m */; };
 		F20E92A22579114500C82551 /* OrderOneTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E92A02579114500C82551 /* OrderOneTableCell.m */; };
@@ -108,7 +110,6 @@
 		F27EAE422593895200FF8E47 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27EAE412593895200FF8E47 /* WebViewViewController.m */; };
 		F27EAE4825968D6D00FF8E47 /* TEduBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27EAE4725968D6D00FF8E47 /* TEduBoard.framework */; };
 		F27EAEB32597E65C00FF8E47 /* ActivitySignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27EAEB22597E65C00FF8E47 /* ActivitySignDetailViewController.m */; };
-		F28163FA259B032F0015B370 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F28163F9259B032F0015B370 /* WXApiManager.m */; };
 		F285360F258EBF1B00684D27 /* GenerateTestUserSig.m in Sources */ = {isa = PBXBuildFile; fileRef = F285360D258EBF1B00684D27 /* GenerateTestUserSig.m */; };
 		F2853615258EC4F400684D27 /* ReceiveLiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2853614258EC4F400684D27 /* ReceiveLiveView.xib */; };
 		F29BB2E325902D73004C1C4E /* OrderDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29BB2E225902D73004C1C4E /* OrderDetailsModel.m */; };
@@ -145,7 +146,6 @@
 		F2B411AC2563D7D600E6CF80 /* Toolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411A62563D7D600E6CF80 /* Toolbox.m */; };
 		F2B411AD2563D7D600E6CF80 /* PJYModelPrintTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411AA2563D7D600E6CF80 /* PJYModelPrintTool.m */; };
 		F2B411AE2563D7D600E6CF80 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411AB2563D7D600E6CF80 /* UIImage+FixOrientation.m */; };
-		F2B411B12565A95500E6CF80 /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411AF2565A95500E6CF80 /* UIButton+EnlargeEdge.m */; };
 		F2B411B42565A96D00E6CF80 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411B32565A96D00E6CF80 /* UIView+Extension.m */; };
 		F2B411B72565ADFA00E6CF80 /* StudentsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411B62565ADFA00E6CF80 /* StudentsHomeViewController.m */; };
 		F2B411BA2565AE1D00E6CF80 /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B411B92565AE1D00E6CF80 /* AskViewController.m */; };
@@ -178,7 +178,6 @@
 		F2B71263256F59B600859423 /* StudentsFocusTeacherTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B71261256F59B600859423 /* StudentsFocusTeacherTableCell.xib */; };
 		F2B7AC4625884507002DDFC1 /* TeacherTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B7AC4525884507002DDFC1 /* TeacherTeamModel.m */; };
 		F2B7AC492588454B002DDFC1 /* ActityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B7AC482588454B002DDFC1 /* ActityModel.m */; };
-		F2BF61E9259B243400E445FC /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF61E8259B243400E445FC /* PayModel.m */; };
 		F2C397E0258461FF00A4442F /* CountryPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C397DF258461FF00A4442F /* CountryPickerView.m */; };
 		F2C397EA2584706F00A4442F /* CZHAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C397E22584706F00A4442F /* CZHAddressPickerView.m */; };
 		F2C397EB2584706F00A4442F /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C397E72584706F00A4442F /* city.plist */; };
@@ -230,6 +229,10 @@
 
 /* Begin PBXFileReference section */
 		149D1B8A3CB016A980222869 /* Pods-TianWen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianWen.release.xcconfig"; path = "Target Support Files/Pods-TianWen/Pods-TianWen.release.xcconfig"; sourceTree = "<group>"; };
+		2FC0C01A259B304C008324BD /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		2FC0C01B259B304C008324BD /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		2FC0C01C259B304C008324BD /* PayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayModel.m; sourceTree = "<group>"; };
+		2FC0C01D259B304C008324BD /* PayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayModel.h; sourceTree = "<group>"; };
 		614896C4B28B096B73B2412F /* Pods-TianWen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianWen.debug.xcconfig"; path = "Target Support Files/Pods-TianWen/Pods-TianWen.debug.xcconfig"; sourceTree = "<group>"; };
 		A29686BBCA76AB509A80A098 /* libPods-TianWen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianWen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20E929C25790F7900C82551 /* QuestionDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionDetailsViewController.h; sourceTree = "<group>"; };
@@ -377,8 +380,6 @@
 		F23AB8A325985424009C4257 /* TRTCCallingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTCCallingDelegate.h; sourceTree = "<group>"; };
 		F23AB8A425985424009C4257 /* TRTCCalling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTCCalling.h; sourceTree = "<group>"; };
 		F23AB8A92598544E009C4257 /* TRTCCalling+Signal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TRTCCalling+Signal.m"; sourceTree = "<group>"; };
-		F260EF462599C9EA00B586CE /* TianWen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TianWen.entitlements; sourceTree = "<group>"; };
-		F260EF472599C9EA00B586CE /* TianWen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TianWen.entitlements; sourceTree = "<group>"; };
 		F26254852590BA18005413D5 /* ApplyWaitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplyWaitView.h; sourceTree = "<group>"; };
 		F26254862590BA18005413D5 /* ApplyWaitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplyWaitView.m; sourceTree = "<group>"; };
 		F26254882590BA27005413D5 /* ApplyWaitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplyWaitView.xib; sourceTree = "<group>"; };
@@ -395,8 +396,6 @@
 		F27EAE4725968D6D00FF8E47 /* TEduBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TEduBoard.framework; sourceTree = "<group>"; };
 		F27EAEB12597E65B00FF8E47 /* ActivitySignDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivitySignDetailViewController.h; sourceTree = "<group>"; };
 		F27EAEB22597E65C00FF8E47 /* ActivitySignDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivitySignDetailViewController.m; sourceTree = "<group>"; };
-		F28163F8259B032F0015B370 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
-		F28163F9259B032F0015B370 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		F285360D258EBF1B00684D27 /* GenerateTestUserSig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTestUserSig.m; sourceTree = "<group>"; };
 		F285360E258EBF1B00684D27 /* GenerateTestUserSig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTestUserSig.h; sourceTree = "<group>"; };
 		F2853614258EC4F400684D27 /* ReceiveLiveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiveLiveView.xib; sourceTree = "<group>"; };
@@ -465,8 +464,6 @@
 		F2B411A92563D7D600E6CF80 /* Toolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toolbox.h; sourceTree = "<group>"; };
 		F2B411AA2563D7D600E6CF80 /* PJYModelPrintTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJYModelPrintTool.m; sourceTree = "<group>"; };
 		F2B411AB2563D7D600E6CF80 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
-		F2B411AF2565A95500E6CF80 /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+EnlargeEdge.m"; path = "../../../../JLKF公司项目/项目/feiyada-IOS/Fiyta/Category/UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
-		F2B411B02565A95500E6CF80 /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+EnlargeEdge.h"; path = "../../../../JLKF公司项目/项目/feiyada-IOS/Fiyta/Category/UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
 		F2B411B22565A96C00E6CF80 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		F2B411B32565A96D00E6CF80 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		F2B411B52565ADFA00E6CF80 /* StudentsHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentsHomeViewController.h; sourceTree = "<group>"; };
@@ -523,8 +520,6 @@
 		F2B7AC4525884507002DDFC1 /* TeacherTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherTeamModel.m; sourceTree = "<group>"; };
 		F2B7AC472588454B002DDFC1 /* ActityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActityModel.h; sourceTree = "<group>"; };
 		F2B7AC482588454B002DDFC1 /* ActityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActityModel.m; sourceTree = "<group>"; };
-		F2BF61E7259B243400E445FC /* PayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayModel.h; sourceTree = "<group>"; };
-		F2BF61E8259B243400E445FC /* PayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayModel.m; sourceTree = "<group>"; };
 		F2C397DE258461FE00A4442F /* CountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerView.h; sourceTree = "<group>"; };
 		F2C397DF258461FF00A4442F /* CountryPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerView.m; sourceTree = "<group>"; };
 		F2C397E22584706F00A4442F /* CZHAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHAddressPickerView.m; sourceTree = "<group>"; };
@@ -731,8 +726,6 @@
 		F2B4110F255D2F3900E6CF80 /* TianWen */ = {
 			isa = PBXGroup;
 			children = (
-				F260EF472599C9EA00B586CE /* TianWen.entitlements */,
-				F260EF462599C9EA00B586CE /* TianWen.entitlements */,
 				F2B41192255DBC5500E6CF80 /* Public */,
 				F2B4118A255D689100E6CF80 /* Tool */,
 				F2B41183255D675500E6CF80 /* Launch */,
@@ -814,8 +807,6 @@
 			children = (
 				F2B411B22565A96C00E6CF80 /* UIView+Extension.h */,
 				F2B411B32565A96D00E6CF80 /* UIView+Extension.m */,
-				F2B411B02565A95500E6CF80 /* UIButton+EnlargeEdge.h */,
-				F2B411AF2565A95500E6CF80 /* UIButton+EnlargeEdge.m */,
 				F2B411962561314200E6CF80 /* UIColor+RGB.h */,
 				F2B411972561314D00E6CF80 /* UIColor+RGB.m */,
 				F2B4118F255DB86100E6CF80 /* UIView+gesture.h */,
@@ -1253,14 +1244,14 @@
 		F2B41192255DBC5500E6CF80 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2FC0C01D259B304C008324BD /* PayModel.h */,
+				2FC0C01C259B304C008324BD /* PayModel.m */,
+				2FC0C01A259B304C008324BD /* WXApiManager.h */,
+				2FC0C01B259B304C008324BD /* WXApiManager.m */,
 				F2C397EE258470F000A4442F /* CHImagePicker */,
 				F2C397E12584706F00A4442F /* AddressPickerView */,
 				F2B41193255DBC6C00E6CF80 /* AppUser.h */,
 				F2B41194255DBC6C00E6CF80 /* AppUser.m */,
-				F28163F8259B032F0015B370 /* WXApiManager.h */,
-				F28163F9259B032F0015B370 /* WXApiManager.m */,
-				F2BF61E7259B243400E445FC /* PayModel.h */,
-				F2BF61E8259B243400E445FC /* PayModel.m */,
 				F2C397DE258461FE00A4442F /* CountryPickerView.h */,
 				F2C397DF258461FF00A4442F /* CountryPickerView.m */,
 				F2C397FF25847A4700A4442F /* FootChooseView.h */,
@@ -1443,7 +1434,6 @@
 				F2B4110A255D2F3900E6CF80 /* Frameworks */,
 				F2B4110B255D2F3900E6CF80 /* Resources */,
 				B9CD448110F6620045B99288 /* [CP] Copy Pods Resources */,
-				74F39C43ED5CD1ABD37995D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1648,48 +1638,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74F39C43ED5CD1ABD37995D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TianWen/Pods-TianWen-frameworks.sh",
-				"${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TianWen/Pods-TianWen-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B9CD448110F6620045B99288 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TianWen/Pods-TianWen-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-TianWen/Pods-TianWen-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-TianWen/Pods-TianWen-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1706,14 +1665,13 @@
 				F2B41195255DBC6C00E6CF80 /* AppUser.m in Sources */,
 				F2158BAE258F55BA00860768 /* OrderListModel.m in Sources */,
 				F20E92A22579114500C82551 /* OrderOneTableCell.m in Sources */,
-				F28163FA259B032F0015B370 /* WXApiManager.m in Sources */,
 				F23AB8AA2598544E009C4257 /* TRTCCalling+Signal.m in Sources */,
 				F2B411982561314D00E6CF80 /* UIColor+RGB.m in Sources */,
 				F262549325932F34005413D5 /* AfterClassModel.m in Sources */,
 				F2B41154255D457600E6CF80 /* ViewController.m in Sources */,
 				F2C3980A2587045200A4442F /* LoginViewController.m in Sources */,
 				F2C3980F2587943B00A4442F /* IdentityChoiceViewController.m in Sources */,
-				F2B411B12565A95500E6CF80 /* UIButton+EnlargeEdge.m in Sources */,
+				F2B4116A255D517400E6CF80 /* UIButton+EnlargeEdge.m in Sources */,
 				F212AB78256A4B5D00E54F43 /* StudentsSearchViewController.m in Sources */,
 				F2201FFE25775B7600DE4898 /* ActivityDetailsTwoTableCell.m in Sources */,
 				F2C397FB258470F100A4442F /* CHImagePicker.m in Sources */,
@@ -1743,8 +1701,6 @@
 				F228E75E25908571006C9149 /* TeacherOrderDetailsViewController.m in Sources */,
 				F20E929E25790F7900C82551 /* QuestionDetailsViewController.m in Sources */,
 				F220200325775DB200DE4898 /* ActivityDetailsThreeTopTableCell.m in Sources */,
-				F2BF61E9259B243400E445FC /* PayModel.m in Sources */,
-				F2B4116A255D517400E6CF80 /* UIButton+EnlargeEdge.m in Sources */,
 				F22EDB89256A1228004410BB /* IntegralTableViewCell.m in Sources */,
 				F2B4114B255D43BA00E6CF80 /* RootViewController.m in Sources */,
 				F2C46A7225882DAA00008D32 /* OtherModel.m in Sources */,
@@ -1774,6 +1730,7 @@
 				F2B7AC492588454B002DDFC1 /* ActityModel.m in Sources */,
 				F20E92CD25842A3100C82551 /* TeacherOrderListTableCell.m in Sources */,
 				F220201A25777F7B00DE4898 /* TeacherHomeTableCell.m in Sources */,
+				2FC0C01F259B304C008324BD /* PayModel.m in Sources */,
 				F29BB2E325902D73004C1C4E /* OrderDetailsModel.m in Sources */,
 				F2B4114C255D43BA00E6CF80 /* JLKFBaseViewController.m in Sources */,
 				F2C397FE2584725600A4442F /* TeacherInfoModel.m in Sources */,
@@ -1795,6 +1752,7 @@
 				F2C397E0258461FF00A4442F /* CountryPickerView.m in Sources */,
 				F20E92A7257927CD00C82551 /* OrderTwoTableCell.m in Sources */,
 				F2B411D7256733FF00E6CF80 /* UIView+SDExtension.m in Sources */,
+				2FC0C01E259B304C008324BD /* WXApiManager.m in Sources */,
 				F212AB87256A67E200E54F43 /* StudentsMoneyRecordTableCell.m in Sources */,
 				F2C397EA2584706F00A4442F /* CZHAddressPickerView.m in Sources */,
 				F2C397EC2584706F00A4442F /* UIView+CZHExtension.m in Sources */,
@@ -2011,8 +1969,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N59SHY2VBK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2020,7 +1979,7 @@
 					"$(PROJECT_DIR)/TianWen/Tool/TencentWhiteboard",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhuwei/Documents/外包项目/TianWen/TianWen/Define/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TianWen/Define/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -2091,7 +2050,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.technologyTW.TianWen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = GeneralPragram_7;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
@@ -2103,8 +2062,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = N59SHY2VBK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2112,7 +2072,7 @@
 					"$(PROJECT_DIR)/TianWen/Tool/TencentWhiteboard",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhuwei/Documents/外包项目/TianWen/TianWen/Define/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TianWen/Define/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -2183,7 +2143,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.technologyTW.TianWen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = GeneralPragram_7;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};

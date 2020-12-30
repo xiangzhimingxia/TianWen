@@ -181,6 +181,15 @@ kAS(NSInteger, selectInt);
         
     }];
     
+//    [HttpManager getWithURL:online_Home andParams:@{@"token":User.token} returnBlcok:^(NSError *error, id obj) {
+//
+//        if ([SuccessInfo integerValue] == MSG_SUCCESS) {
+//            OtherModel *model = [OtherModel mj_objectWithKeyValues:obj[dataKey]];
+//            NSLog(@"%@", model);
+//        }
+//
+//    }];
+    
     [HttpManager getWithURL:column_Home andParams:nil returnBlcok:^(NSError *error, id obj) {
   
         if ([SuccessInfo integerValue] == MSG_SUCCESS) {

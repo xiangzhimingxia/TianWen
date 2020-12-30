@@ -35,7 +35,7 @@
 
 #pragma mark -- 首页
 #define Banner_Home [NSString stringWithFormat:@"%@/heaven-api/api/index/banner",HOST]
-
+#define online_Home [NSString stringWithFormat:@"%@/heaven-api/api/myWS",HOST]
 #define column_Home [NSString stringWithFormat:@"%@/heaven-api/api/index/column",HOST]
 
 #define facultyTeam_Home [NSString stringWithFormat:@"%@/heaven-api/api/index/facultyTeam",HOST]

@@ -50,7 +50,6 @@
 #import "JLKFBaseViewController.h"
 #import "JLKFBaseNavigationController.h"
 #import "AppUser.h"
-
 #endif
 
 #endif /* PrefixHeader_pch */

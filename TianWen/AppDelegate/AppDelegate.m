@@ -22,6 +22,7 @@
 //自用组件
 #import "ReceiveLiveView.h"
 #import "OtherModel.h"
+#import "ImSDK.h"
 
 @interface AppDelegate ()<TRTCCallingDelegate,V2TIMSimpleMsgListener,TEduBoardDelegate,WXApiDelegate>
 

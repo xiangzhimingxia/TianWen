@@ -26,7 +26,6 @@ PODS:
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
   - SVProgressHUD (2.2.5)
-  - TXIMSDK_iOS (5.1.10)
   - TXLiteAVSDK_TRTC (8.1.9721)
   - WechatOpenSDK (1.8.7.1)
   - YYKit (1.0.9):
@@ -43,13 +42,12 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.3)
   - SDWebImage (~> 4.0)
   - SVProgressHUD
-  - TXIMSDK_iOS
   - TXLiteAVSDK_TRTC
   - WechatOpenSDK
   - YYKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - FreeStreamer
     - IQKeyboardManager
@@ -60,7 +58,6 @@ SPEC REPOS:
     - Reachability
     - SDWebImage
     - SVProgressHUD
-    - TXIMSDK_iOS
     - TXLiteAVSDK_TRTC
     - WechatOpenSDK
     - YYKit
@@ -76,11 +73,10 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TXIMSDK_iOS: dc60e32d33256cd0b358e24c1441c50b0ed66fb8
   TXLiteAVSDK_TRTC: fa7416f4e6b465c11ca6d0c0836daf74e2d41bc9
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: d4ae77112566dd8ac0c5a145e76b9be03a02310d
+PODFILE CHECKSUM: 71f6c81e1e136bdf59853921d3753a9882969537
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.0
